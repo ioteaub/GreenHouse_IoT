@@ -31,8 +31,8 @@ OneWire oneWire(oneWireBus);
 DallasTemperature sensors(&oneWire);
 
 // Firebase Configuration
-#define API_KEY "AIzaSyDzt4bszSYDRFPlGTgXkXWGcfZ5i9kaCZU"
-#define DATABASE_URL "green-house-1-be075-default-rtdb.firebaseio.com"
+#define API_KEY "YOUR_FIREBASE_API_KEY"
+#define DATABASE_URL "YOUR_FIREBASE_DATABASE_URL"
 
 // Define Firebase Data object
 FirebaseData fbdo;
@@ -77,9 +77,9 @@ void setup() {
     digitalWrite(wifiled, !digitalRead(wifiled)); // Blink LED saat mode AP
   });
 
-  // Set AP credentials
-  const char* ap_ssid = "greenhouse";
-  const char* ap_password = "punyaiot";
+  // Set AP credentials (placeholder)
+  const char* ap_ssid = "YOUR_AP_SSID";
+  const char* ap_password = "YOUR_AP_PASSWORD";
 
   // Start WiFiManager dengan SSID dan password khusus
   Serial.println("Memulai WiFiManager...");
